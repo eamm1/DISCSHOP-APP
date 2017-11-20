@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#presentacion{
+    background-color: #F5F5F5;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0 0 22px #111111;
+    height: 340px;
+    margin: 190px auto 0;
+    position: relative;
+    width: 640px;
+}
+
+#presentacion ul{
+	height: 320px;
+	left: 14px;
+	list-style: none outside none;
+	overflow: hidden;
+	position: absolute;
+	top: 10px;
+	width: 620px;
+}
+
+#presentacion li{
+    position:absolute;
+    display:none;
+    z-index:10;
+}
+
+#presentacion li:first-child{
+    display:block;
+    z-index:1000;
+}
+
+#presentacion .flecha{
+	height:86px;
+	width:60px;
+	position:absolute;
+	background:url('img/flechas.png') no-repeat;
+	top:167px;
+	margin-top:-43px;
+	cursor:pointer;
+	z-index:5000;
+}
+
+#presentacion .anterior{
+	background-position:left top;
+	left:-35px;
+}
+    
+#presentacion .anterior:hover{ 
+    background-position:left bottom;
+}
+
+#presentacion .siguiente{ 
+    background-position:right top;
+    right:-30px;
+}
+
+#presentacion .siguiente:hover{ 
+    background-position:right bottom;
+}
+
+#presentacion .derechos{
+    position: absolute;
+    top: 105%;
+    left: 25%;
+}
+
+#presentacion canvas{
+    display:none;
+    position:absolute;
+    z-index:100;
+}
+
+#presentacion .imagenActiva{
+    z-index:1000;
+}
+#comentarios {
+    margin-top: 21px;
+    padding-top: 22px;
+    border-top: 1px solid #d7d7d7;
+}
+
+#comentarios article {
+        display: table;
+        padding: 22px;
+    }
+
+section#comentarios article:nth-child(2n+1) {
+    padding: 21px;
+    background: #E3E3E3;
+    border: 1px solid #d7d7d7;
+    border-radius: 11px;
+}
+
+#comentarios article header {
+    display: table-cell;
+    width: 220px;
+    padding-right: 22px;
+}
+
+#comentarios article header a {
+    display: block;
+    font-weight: bold;
+    color: #000;
+}
+
+#comentarios article header a:hover {
+    text-decoration: none;
+}
+
+#comentarios article p {
+    padding: 0;
+}

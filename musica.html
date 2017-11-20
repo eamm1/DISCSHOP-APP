@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+        <title>DISCSHOP-AQP</title>
+        <link rel="stylesheet" href="Estilo.css" type="text/css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="EstiloImg.css" />
+        <link rel="stylesheet" href="EstiloT0205.css">
+    <style type="text/css">
+        .piedepag {
+	text-align: center;
+}
+        .piedepag {
+	color: #999;
+}
+        #seccion article table tr td .imagenActiva {
+	text-align: center;
+}
+    tablas {
+	font-size: 10px;
+}
+    #seccion article table tr td {
+	text-align: center;
+}
+    </style>
+
+</head>
+<body>
+        <header>
+            <h1>DISCSHOP-AQP</h1>
+        </header>
+		<nav>
+            <!-- Navegación -->
+            <ul>  
+                <li><a href="index.html">Inicio</a></li>  
+                <li><a href="somos.html">Quienes Somos</a></li>  
+                <li><a href="#">Articulos <span>^</span> </a>
+                	<ul>
+                        <li><a href="musica.html" title="Musica">Musica</a></li>
+                        <li><a href="#" title="JuegosPC">Juegos PC</a></li>
+                        <li><a href="#" title="PlayStation2">PlayStation2</a></li>
+                        <li><a href="juegos.html" title="PlayStation3">PlayStation3</a></li>
+                        <li class="ultimo"><a href="#" title="Peliculas">Peliculas</a></li>
+                    </ul> 
+              </li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>      
+            </ul> 
+        </nav>
+<section id="seccion">
+            <header>
+                <h1>Musica</h1>
+            </header>
+            <article>
+                <table width="742" height="350" border="1" align="center">
+                  <tr>
+                    <td width="179" height="203"><img src="recursos/mus-1.jpg" alt="GTA4" width="200" height="200" class="imagenActiva" align="baseline"></td>
+                    <td width="179"><img src="recursos/mus-2.jpg" width="200" height="200" alt="CASS"></td>
+                    <td width="179"><img src="recursos/mus-3.jpg" width="200" height="200" alt="RES"></td>
+                    <td width="202"><img src="recursos/mus-4.jpg" width="200" height="200" alt="RESI"></td>
+                  </tr>
+                  <tr>
+                    <td height="22">Precio: S/. 40.00  <img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                    <td>Precio: S/. 30.00<img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                    <td>Precio: S/. 45.00<img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                    <td>Precio: S/. 50.00<img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="recursos/mus-5.jpg" width="200" height="200" alt="inf"></td>
+                    <td><img src="recursos/mus-6.jpg" width="200" height="200" alt="av"></td>
+                    <td><img src="recursos/mus-7.jpg" width="200" height="200" alt="sec"></td>
+                    <td><img src="recursos/mus-8.jpg" width="200" height="200" alt="tek"></td>
+                  </tr>
+                  <tr>
+                    <td>Precio: S/. 73.00 <img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                    <td>Precio: S/. 55.55 <img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                    <td>Precio: S/. 69.50 <img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                    <td>Precio: S/. 48.00 <img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="recursos/mus-9.jpg" width="200" height="200" alt="1"></td>
+                    <td><img src="recursos/mus-10.jpg" width="200" height="200" alt="uc"></td>
+                    <td><img src="recursos/port1.jpg" width="200" height="200" alt="ir"></td>
+                    <td><img src="recursos/mus-11.jpg" width="200" height="200" alt="bk"></td>
+                  </tr>
+                  <tr>
+                    <td>Precio: S/. 25.00 <img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                    <td>Precio: S/. 40.00 <img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                    <td>Precio: S/. 33.00 <img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                    <td>Precio: S/. 84.00 <img src="recursos/add.png" width="25" height="25" alt="add"></td>
+                  </tr>
+                </table>
+                <p>&nbsp;</p>
+                
+          </article> 
+        </section>
+<script>
+            var addEvent = (function () 
+            {
+                if (document.addEventListener) 
+                {
+                    return function (el, type, fn) 
+                    {
+                        if (el && el.nodeName || el === window) 
+                        {
+                            el.addEventListener(type, fn, false);
+                        } else if (el && el.length) 
+                        {
+                            for (var i = 0; i < el.length; i++) 
+                            {
+                                addEvent(el[i], type, fn);
+                            }
+                        }
+                    };
+                } else 
+                {
+                    return function (el, type, fn) 
+                    {
+                        if (el && el.nodeName || el === window) 
+                        {
+                            el.attachEvent('on' + type, function () { return fn.call(el, window.event); });
+                        } else if (el && el.length) 
+                        {
+                            for (var i = 0; i < el.length; i++) 
+                            {
+                                addEvent(el[i], type, fn);
+                            }
+                        }
+                    };
+                }
+            })();
+       
+            var links = document.querySelectorAll('li > a'), el = null;
+            for (var i = 0; i < links.length; i++) 
+            {
+                el = links[i];
+              
+                el.setAttribute('draggable', 'true');
+                  
+                addEvent(el, 'dragstart', function (e) {
+                    e.dataTransfer.effectAllowed = 'copy'; 
+                    e.dataTransfer.setData('Text', this.id); 
+                    });
+            }
+            
+            var bin = document.querySelector('#bin');
+            
+            addEvent(bin, 'dragover', function (e) {
+                if (e.preventDefault) e.preventDefault(); 
+                this.className = 'over';
+                e.dataTransfer.dropEffect = 'copy';
+                return false;
+                });
+            
+            addEvent(bin, 'dragenter', function (e) {
+                this.className = 'over';
+                return false;
+                });
+            
+            addEvent(bin, 'dragleave', function () {
+                this.className = '';
+                });
+            
+            addEvent(bin, 'drop', function (e) {
+                if (e.stopPropagation) e.stopPropagation(); 
+                
+                var el = document.getElementById(e.dataTransfer.getData('Text'));
+                var destino = document.getElementById('destino');
+                
+                el.parentNode.removeChild(el);
+                destino.appendChild(el);
+                
+                bin.className = '';
+
+                return false;
+                });
+        </script>
+<section id="comentarios">
+                    <header>
+                        <h3>Noticias</h3>
+                    </header>
+                    <article>
+                        <header>
+                            <a href="Mundos abiertos que conducen a pasillos">Mundos abiertos que conducen a pasillos</a><a href="#"></a> el <time datetime="2013-10-09T03:35:20-06:00">29 de Octubre de 2013 a las 10:35</time>
+                        </header>
+                        <p>GTA V es maravilloso, eso nadie lo pone en duda, pero resulta fantastico saber que aun tiene mucho margen de mejora, sobretodo en lo que respecta a los muros imaginarios de su mundo abierto.</p>
+                    </article>
+                    <article>
+                        <header><a href="¿Que marca el final de una saga?">¿Que marca el final de una saga?</a><a href="#"></a> el
+                          <time datetime="2013-10-09T03:35:20-06:00">29 de Octubre de 2013 a las 10:35</time>
+                        </header>
+                        <p>Quiza Assassin's Creed III debio marcar el final de la franquicia y dar paso a un nuevo proyecto</p>
+                    </article>
+                </section>
+        <aside>
+            <!-- Barra Lateral -->
+        </aside>
+        <footer>
+            <!-- Pie de Página -->
+		   <article>
+             <section> <p class="piedepag"><span class="piedepag">Derechos Resevados 2013</span></p>
+                        <p class="piedepag"><span class="piedepag">DISCSHOP-AQP</span></p>
+                        <p class="piedepag"><span class="piedepag">HTML5/CSS</span></p></section>
+          </article>
+        </footer>
+</body>
+</html>

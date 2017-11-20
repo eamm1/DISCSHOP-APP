@@ -1,0 +1,93 @@
+ <html>
+    <head>
+        <title>DISCSHOP-AQP</title>
+        <link rel="stylesheet" href="Estilo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="EstiloForm.css" type="text/css" media="screen" />
+    </head>
+    <body>
+                <header>
+            <h1>DISCSHOP-AQP</h1>
+        </header>
+        <nav>
+            <!-- Navegación -->
+           <ul>  
+                <li><a href="index.html">Inicio</a></li>  
+                <li><a href="somos.html">Quienes Somos</a></li>  
+                <li><a href="#">Articulos <span>^</span> </a>
+                	<ul>
+                        <li><a href="musica.html" title="Musica">Musica</a></li>
+                        <li><a href="#" title="JuegosPC">Juegos PC</a></li>
+                        <li><a href="#" title="PlayStation2">PlayStation2</a></li>
+                        <li><a href="juegos.html" title="PlayStation3">PlayStation3</a></li>
+                        <li class="ultimo"><a href="#" title="Peliculas">Peliculas</a></li>
+                    </ul> 
+              </li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>      
+            </ul>
+        </nav>
+
+<body>
+        <form id="orderForm" action="" method="get">
+            <h3>Formulario de Registro</h3>
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <ul>
+                    <li>
+                        <label for="correo">Correo</label>
+                        <input type="email" name="correo" id="correo" placeholder="nombre@ejemplo.com" required maxlength="50" />
+                    </li>
+                    <li>
+                        <label for="Password">Password</label>
+                        <input type="url" name="Password" id="Password" placeholder="123456asdASD" required maxlength="100" />
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de pago</legend>
+                <ul>
+                    <li>
+                        <label for="nombre">Name</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre Apellido" required maxlength="50" />
+                    </li>
+                    <li>
+                        <label for="direccion">Direcci&oacute;n</label>
+                        <textarea name="direccion" id="direccion" placeholder="Calle, Avenida, No." required maxlength="150"></textarea>
+                    </li>
+                    <li>
+                        <label for="codigo">C&oacute;digo postal</label>
+                        <input type="text" name="codigo" id="codigo" placeholder="Codigo Postal" required maxlength="20" />
+                    </li>
+                    <li>
+                        <label for="pais">Pa&iacute;s</label>
+                        <select name="pais" id="pais">
+                            <option>Argentina</option>
+                            <option>Costa Rica</option>
+                            <option>Espa&ntilde;a</option>
+                            <option>Honduras</option>
+                            <option>M&eacute;xico</option>
+                            <option>Venezuela</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="telefono">Tel&eacute;fono <em>(opcional)</em></label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="(999) 9999-9999" maxlength="20" />
+                    </li>
+                    <li>
+                        <label for="tarjeta">N&uacute;mero de Tarjeta</label>
+                        <input type="text" name="tarjeta" id="tarjeta" placeholder="No. Tarjeta" required maxlength="30" pattern="[\d\ ]{12,}" />
+                    </li>
+                    <li>
+                        <label for="confirmacion">C&oacute;digo de Confirmaci&oacute;n</label>
+                        <input type="number" name="confirmacion" id="confirmacion" placeholder="Confirmacion" required maxlength="3" pattern="\d{3}" />
+                    </li>
+                    <li>
+                    <label for="vencimiento">Fecha de Vencimiento</label>
+                    <input type="text" name="vencimiento" id="vencimiento" placeholder="YYYY-MM" required pattern="\d{4}-\d{2}"  maxlength="7" />
+                    </li>
+                </ul>
+            </fieldset>
+            <input type="submit" name="Registrar" value="Registrar ahora" />
+        </form>
+    </body>
+</html>

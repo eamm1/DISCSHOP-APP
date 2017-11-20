@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>DISCSHOP-AQP</title>
+        <link rel="stylesheet" href="Estilo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="EstiloForm.css" type="text/css" media="screen" />
+    </head>
+    <body>
+                <header>
+            <h1>DISCSHOP-AQP</h1>
+        </header>
+        <nav>
+            <!-- Navegación -->
+           <ul>  
+                <li><a href="index.html">Inicio</a></li>  
+                <li><a href="somos.html">Quienes Somos</a></li>  
+                <li><a href="#">Articulos <span>^</span> </a>
+                	<ul>
+                        <li><a href="musica.html" title="Musica">Musica</a></li>
+                        <li><a href="#" title="JuegosPC">Juegos PC</a></li>
+                        <li><a href="#" title="PlayStation2">PlayStation2</a></li>
+                        <li><a href="juegos.html" title="PlayStation3">PlayStation3</a></li>
+                        <li class="ultimo"><a href="#" title="Peliculas">Peliculas</a></li>
+                    </ul> 
+              </li>
+                <li><a href="login.html">Iniciar Sesion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>      
+            </ul>
+        </nav>
+	<form id="loginForm" action="" method="get">
+            <h3>Inicio Sesion</h3>
+            <fieldset>
+                <legend>Inicio Sesion</legend>
+                <ul>
+                        <label for="Usuario">Usuario</label>
+                        <input type="text" name="usuario" id="Usuario" placeholder="Usuario" required min="5" max="15" autofocus /> </n>
+                        <label for="Password">Contraseña</label>
+                        <input type="password" name="Pass" id="Pass" placeholder="Contraseña" required min="5" max="15" autofocus />
+                </ul>
+                <li><a href="Registro.html" title="Registrarse">Registrase</a></li>
+            </fieldset>
+ 	    <input type="submit" name="login" value="Aceptar" />
+        </form>
+    </body>
+</html>
